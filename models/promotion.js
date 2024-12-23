@@ -26,13 +26,12 @@ const promotionSchema = new Schema({
     description: {
         type: String,
         required: true
-    },
-    comments: [commentSchema]
+    }
 }, {
     timestamps: true
 });
 
 
-const Promotion = mongoose.model('Partner', promotionSchema);
+const Promotion = mongoose.model('Promotion', promotionSchema);
 
 module.exports = Promotion;
